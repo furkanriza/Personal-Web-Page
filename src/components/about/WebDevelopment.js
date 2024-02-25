@@ -32,14 +32,17 @@ const WebDevelopment = ({ onClose }) => {
                 <a href='https://github.com/furkanriza/TodoList' style={{ color: 'blue' }} target='_blank'>Source Code<span role="img" aria-label="New Tab">&#x1F855;</span></a>
             </p>
 
-            <p><strong>Personal Website: </strong>This website designed with React.js and deployed to .........</p>
+            <p>
+                <strong>Personal Website: </strong>This website designed with React.js and deployed to .........
 
-            <br/>
+                <a href='https://github.com/furkanriza/Personal-Web-Page' style={{ color: 'blue' }} target='_blank'>Source Code<span role="img" aria-label="New Tab">&#x1F855;</span></a>
+            </p>
 
             <p> <a href='https://github.com/furkanriza/TodoList' style={{ color: 'aqua' }} target='_blank'> Certificates <span role="img" aria-label="New Tab">&#x1F855;</span></a></p>
 
+            <br />
             <div className='center_content'><button className="close_button" onClick={onClose}>Close</button></div>
-            
+
 
         </div>
     );

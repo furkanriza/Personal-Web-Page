@@ -1,9 +1,6 @@
 .App {
     text-align: center;
     background-color: #282c34;
-    /*min-height: 100vh;*/
-    /*display: flex;
-    flex-direction: column;*/
     align-items: center;
     justify-content: center;
     font-size: calc(10px + 2vmin);
@@ -12,7 +9,6 @@
 
 .App-logo {
     height: 10vmin;
-    /*pointer-events: painted;*/
     margin: 0 auto !important;
 }
 
@@ -127,7 +123,6 @@ body {
     color: rgb(255, 136, 0);
 }
 
-/***************************************************************************************************************************************************************/
 .fade-enter {
     opacity: 0;
     transform: scale(0.9);
@@ -147,9 +142,6 @@ body {
     opacity: 0;
     transition: opacity 300ms;
 }
-
-/***************************************************************************************************************************************************************/
-
 
 .welcome_note_container {
     justify-content: center;
@@ -246,8 +238,6 @@ button {
 
 .row {
     margin: 0 auto;
-    /*padding-left: 300px;*/
-    /*padding-right: 300px;*/
     align-items: center;
     justify-content: center;
 }
@@ -312,17 +302,12 @@ button {
 
 .social_icon {
     width: 40px;
-    /* Adjust the width to your desired size */
     height: 40px;
-    /* Adjust the height to your desired size */
     margin: 0 10px;
 }
 
 #home {
-    /*width: 100%;*/
     margin: 0px auto;
-    /*height: 100%;*/
-    border-bottom: 3px solid rgb(255, 0, 0);
     align-items: center;
 }
 
@@ -331,8 +316,8 @@ button {
     width: 100%;
     margin: 10px auto;
     height: 950px;
-    border-bottom: 3px solid rgb(255, 0, 0);
     align-items: center;
+    margin-bottom: 50px;
 }
 
 .about_content {
@@ -355,7 +340,8 @@ button {
 }
 
 .about_component {
-    padding: 10px;
+    padding: 20px;
+    margin: 15px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     display: flex;
@@ -373,26 +359,26 @@ button {
     border-collapse: separate;
     border-spacing: 0 20px;
     font-size: 17px;
+    margin-top: 40px;
 }
-
-.education_table_row {
-    padding-bottom: 50px;
-}
-
 
 .education_table_data {
-    text-align: right;
-    padding-left: 30px;
+    text-align: center;
+}
+
+.education_table_data_title {
+    text-align: center;
+    font-size: 18px;
+    /*color: rgb(47, 228, 228);*/
 }
 
 .about_component_skills {
-
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
     grid-template-rows: auto;
-    margin-bottom: 20px;
     align-items: center;
     text-align: center;
+    justify-content: center;
     
 }
 
@@ -400,7 +386,7 @@ button {
     background-color: #000000 !important;
     font-size: 17px !important;
     color:red;
-
+    border: solid 1px #ffffff;
 }
 
 .skills_container:hover {
@@ -452,6 +438,7 @@ button {
 .anadolu_ajansi_img {
     max-width: 380px;
     margin-left: 10px;
+    margin-bottom: 17px;
 }
 
 .about_component_experiences_havelsan {
@@ -460,9 +447,18 @@ button {
     align-items: center;
 }
 
+.about_component_experiences_aa {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 35px;
+}
+
 .experience_more_button {
-    text-align: center;
     margin: 20px;
+    margin-top: auto;
+    width: 100%;
+    text-align: center;
 }
 
 .skill_page_content_other {
@@ -486,7 +482,7 @@ button {
 }
 
 .contfrm {
-    height: 700px;
+    /*height: 700px;*/
     background-color: rgb(66, 66, 66);
     padding: 20px;
 }
@@ -531,7 +527,7 @@ input[type=submit] {
 input[type=text],
 textarea[type=text] {
     font-size: 15px;
-    color: rgb(255, 255, 255);
+    /*color: rgb(255, 255, 255);*/
     font-weight: bold;
     letter-spacing: 1px;
     word-spacing: 2px;

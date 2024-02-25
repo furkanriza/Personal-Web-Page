@@ -75,12 +75,13 @@ const About = () => {
                             <table className="education_table">
                                 <tbody>
                                     <tr className="education_table_row">
-                                        <td>Ankara Yıldırım Beyazıt University <br />(Bachelor of Computer Science)</td>
-                                        <td className="education_table_data">2019 - 2024</td>
+                                        <td className="education_table_data_title"><strong>Ankara Yıldırım Beyazıt University <br />(Bachelor of Computer Science)</strong></td>
+                                    </tr>
+                                    <tr className="education_table_row">
+                                        <td className="education_table_data">2019 - 2024<br />(senior undergraduate student)</td>
                                     </tr>
 
                                     <tr className="education_table_row">
-                                        <td>senior undergraduate student</td>
                                         <td className="education_table_data">CGPA: 3.20</td>
                                     </tr>
 
@@ -109,6 +110,7 @@ const About = () => {
                         <div className="about_component">
                             <h2 className="about_component_title">Skills</h2>
                             <img className="skills_img" src={skillsImg} alt='skill' />
+                            <br /><br /><br /><br /><br />
                             <div className="about_component_skills">
                                 {skills.map(skill => (
                                     <Popup
@@ -159,28 +161,27 @@ const About = () => {
                                         <li className='line_space'>Delivered a REST API and a user interface.</li>
                                         <li className='line_space'>Provided employees to organize clubs, view event calendar and get club recommendations, and
                                             handles club - event costs for company-wide usage.</li>
-                                        <div className='experience_more_button'>
-                                            <Popup
-                                                trigger={<button className="skills_container" onClick={() => setActiveExperience(havelsanExperience)}>More</button>}
-                                                modal
-                                                nested
-                                                closeOnDocumentClick={false}
-                                                closeOnEscape={true}
-                                            >
-                                                {close => (
-                                                    <div>
-                                                        <Havelsan onClose={close} />
-                                                    </div>
-                                                )}
-                                            </Popup>
-                                        </div>
-
                                     </p>
+                                    <div className='experience_more_button'>
+                                        <Popup
+                                            trigger={<button className="skills_container" onClick={() => setActiveExperience(havelsanExperience)}>More</button>}
+                                            modal
+                                            nested
+                                            closeOnDocumentClick={false}
+                                            closeOnEscape={true}
+                                        >
+                                            {close => (
+                                                <div>
+                                                    <Havelsan onClose={close} />
+                                                </div>
+                                            )}
+                                        </Popup>
+                                    </div>
                                 </div>
 
 
                                 {/* ANADOLU AGENCY */}
-                                <div className='about_component_experiences_havelsan'>
+                                <div className='about_component_experiences_aa'>
                                     <img className="anadolu_ajansi_img" src={anadoluAgency} alt='anadolu agency' />
 
                                     <h2 className='havelsan_title'>Anadolu Ajansı A.Ş</h2>
@@ -201,23 +202,22 @@ const About = () => {
                                         <li className='line_space'>Integrated user authentication and authorization with JWT web tokens</li>
                                         <li className='line_space'>Utilized PostgreSQL for database and Hibernate for ORM, integrated
                                             with YouTube Data API, implemented refresh token mechanism.</li>
-
-                                        <div className='experience_more_button'>
-                                            <Popup
-                                                trigger={<button className="skills_container" onClick={() => setActiveExperience(anadoluAgencyExperience)}>More</button>}
-                                                modal
-                                                nested
-                                                closeOnDocumentClick={false}
-                                                closeOnEscape={true}
-                                            >
-                                                {close => (
-                                                    <div>
-                                                        <AnadoluAgency onClose={close} />
-                                                    </div>
-                                                )}
-                                            </Popup>
-                                        </div>
                                     </p>
+                                    <div className='experience_more_button'>
+                                        <Popup
+                                            trigger={<button className="skills_container" onClick={() => setActiveExperience(anadoluAgencyExperience)}>More</button>}
+                                            modal
+                                            nested
+                                            closeOnDocumentClick={false}
+                                            closeOnEscape={true}
+                                        >
+                                            {close => (
+                                                <div>
+                                                    <AnadoluAgency onClose={close} />
+                                                </div>
+                                            )}
+                                        </Popup>
+                                    </div>
                                 </div>
                             </div>
 

@@ -22,7 +22,7 @@ const MobileDevelopment = ({ onClose }) => {
                 <strong>PawRescue: </strong>Developed a mobile application that helps stray animals to be adopted and lost pet owners to find their animals. 
                 Everything I wrote above was used and a user-friendly application was delivered.
 
-                <a href='https://github.com/' style={{ color: 'blue' }} target='_blank'> Source Code<span role="img" aria-label="New Tab">&#x1F855;</span></a>
+                <a href='https://github.com/furkanriza/PawRescue' style={{ color: 'blue' }} target='_blank'> Source Code<span role="img" aria-label="New Tab">&#x1F855;</span></a>
             </p>
 
             <div className='center_content'><button className="close_button" onClick={onClose}>Close</button></div>

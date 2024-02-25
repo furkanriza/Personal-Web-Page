@@ -46,8 +46,8 @@ function Home() {
                 <p className="welcome_content">
                   Take a look around to see my work, explore my projects, or scroll page right. Let's connect and create something remarkable together!
                 </p>
-                <button className="contact_bt">Learn More</button>
-                <button className="contact_bt">Contact</button>
+                <button className="contact_bt"><a href="#about">Learn More</a></button>
+                <button className="contact_bt"><a href="#contact_area">Contact</a></button>
                 <button className="contact_bt2" onClick={handleDownloadCV}>My Resume <span className='new_tab' role="img" aria-label="New Tab">&#x1F855;</span></button>
               </div>
             </div>
